@@ -10,7 +10,14 @@
     href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
     crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"> -->
     <title>shoepurchasewebsite</title>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" 
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+     crossorigin="anonymous"/>
+    
   </head>
   <body>
     
@@ -44,45 +51,127 @@
                     <li class="nav-item">
                         <a class="nav-link" href="Register.html">Register</a>
                     </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="buy.html">Buy</a>
+                  </li>
                 </ul>
               </div>
           </div>
       </nav>
+      
 
 
 
 
-      <hr>
+      <div class="card">
+        <div class="card-top border-bottom text-center"> <a href="#"> Back to shop</a> <span id="logo">BBBootstrap.com</span> </div>
+        <div class="card-body">
+            <div class="row upper"> <span><i class="fa fa-check-circle-o"></i> Shopping bag</span> <span><i class="fa fa-check-circle-o"></i> Order details</span> <span id="payment"><span id="three">3</span>Payment</span> </div>
+            <div class="row">
+                <div class="col-md-7">
+                    <div class="left border">
+                        <div class="row"> <span class="header">Payment</span>
+                            <div class="icons"> <img src="https://img.icons8.com/color/48/000000/visa.png" /> <img src="https://img.icons8.com/color/48/000000/mastercard-logo.png" /> <img src="https://img.icons8.com/color/48/000000/maestro.png" /> </div>
+                        </div>
+                        <form> <span>Cardholder's name:</span> <input placeholder="Linda Williams"> <span>Card Number:</span> <input placeholder="0125 6780 4567 9909">
+                            <div class="row">
+                                <div class="col-4"><span>Expiry date:</span> <input placeholder="YY/MM"> </div>
+                                <div class="col-4"><span>CVV:</span> <input id="cvv"> </div>
+                            </div> <input type="checkbox" id="save_card" class="align-left"> <label for="save_card">Save card details to wallet</label>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="right border">
+                        <div class="header">Order Summary</div>
+                        <p>2 items</p>
+                        <div class="row item">
+                            <div class="col-4 align-self-center"><img class="img-fluid" src="https://i.imgur.com/79M6pU0.png"></div>
+                            <div class="col-8">
+                                <div class="row"><b>$ 26.99</b></div>
+                                <div class="row text-muted">Be Legandary Lipstick-Nude rose</div>
+                                <div class="row">Qty:1</div>
+                            </div>
+                        </div>
+                        <div class="row item">
+                            <div class="col-4 align-self-center"><img class="img-fluid" src="https://i.imgur.com/Ew8NzKr.jpg"></div>
+                            <div class="col-8">
+                                <div class="row"><b>$ 19.99</b></div>
+                                <div class="row text-muted">Be Legandary Lipstick-Sheer Navy Cream</div>
+                                <div class="row">Qty:1</div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row lower">
+                            <div class="col text-left">Subtotal</div>
+                            <div class="col text-right">$ 46.98</div>
+                        </div>
+                        <div class="row lower">
+                            <div class="col text-left">Delivery</div>
+                            <div class="col text-right">Free</div>
+                        </div>
+                        <div class="row lower">
+                            <div class="col text-left"><b>Total to pay</b></div>
+                            <div class="col text-right"><b>$ 46.98</b></div>
+                        </div>
+                        <div class="row lower">
+                            <div class="col text-left"><a href="#"><u>Add promo code</u></a></div>
+                        </div> <button class="btn">Place order</button>
+                        <p class="text-muted text-center">Complimentary Shipping & Returns</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+
+
+
+
+<form>
+  <fieldset class="fieldset">
+    <legend class="">Choose Delivery method</legend>
+    <ul class="no-bullet">
+      <li><input type="checkbox"><label for="checkbox">Same day messenger service</label></li>
+      <li><input type="checkbox"><label for="checkbox">Next day ground delivery</label></li>
+      <li><input type="checkbox"><label for="checkbox">pick up</label></li>
+    </ul>
+  </fieldset>
+</form>
+
+
+
+
+<hr>
 <footer class="bg-dark text-white pt-5 pb-4 fot1">
   <div class="container my-4">
     <div class="row py-4">
 
-      <div class="col-lg-4 mb-4 mx-auto mt-3">
+      <div class="col-lg-4 mb-2 mx-auto mt-2">
         <h3>Heading</h3>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis maxime aspernatur </p>
-        <ul>
-         <li><a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a></li> 
-         <li><a href="https://www.instagram.com/hannaaazzu/"><i class="fab fa-instagram"></i></a></li> 
-        </ul>
+        <p>we provide various types of shoes around the city, enjoy viewing our website.</p>
+         <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a> 
+         <a href="https://www.instagram.com/hannaaazzu/"><i class="fab fa-instagram"></i></a>
       </div>
 
-      <div class="col-lg-4 mb-4 mx-auto mt-3">
+      <div class="col-lg-4 mb-2 mx-auto mt-2">
         <h3  text-center>Links</h3>
         <ul>
-          <li><a href="#">Loreum ipsum</a></li>
-          <li><a href="#">Nam mauris velit</a></li>
-          <li><a href="#">Etiam vitae mauris</a></li>
-          <li><a href="#">Fusce scelerisque</a></li>
-          <li><a href="#">Sed faucibus</a></li>
-          <li><a href="#">Mauris efficitur nulla</a></li>
+          <li><a href="#">New come</a></li>
+          <li><a href="#">Brands</a></li>
+          <li><a href="#">Eye shope</a></li>
+          <li><a href="#">Visit</a></li>
+          <li><a href="#">Details</a></li>
+          <li><a href="#">Help</a></li>
         </ul>
       </div>
 
-      <div class="col-lg-4 mb-4 mx-auto mt-3">
+      <div class="col-lg-4 mb-2 mx-auto mt-2">
         <h3>Locations</h3>
         <p>22, Lorem ipsum dolor, consectetur adipisicing </p>
         <p>
-          <i class="fas fa-enveloper mr-3"></i>(541)745-3010
+          <i class="fas fa-phone mr-3"></i>(541)745-3010
         </p>
         <p>
           <i class="fas fa-phone mr-3"></i>info@hsdf.com
@@ -99,7 +188,6 @@
 
   </div>
 </footer>
-
 
 
 
