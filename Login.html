@@ -4,7 +4,8 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    <title>shoepurchasewebsite</title>
+    <link rel="stylesheet" href="asset/css/login.css">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet"
     href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
@@ -12,8 +13,7 @@
     crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- <link rel="stylesheet" href="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"> -->
-    <title>shoepurchasewebsite</title>
-    <script src="index.js"></script>
+    
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" 
     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
      crossorigin="anonymous"/>
@@ -63,82 +63,44 @@
 
 
 
-      <div class="card">
-        <div class="card-top border-bottom text-center"> <a href="#"> Back to shop</a> <span id="logo">BBBootstrap.com</span> </div>
-        <div class="card-body">
-            <div class="row upper"> <span><i class="fa fa-check-circle-o"></i> Shopping bag</span> <span><i class="fa fa-check-circle-o"></i> Order details</span> <span id="payment"><span id="three">3</span>Payment</span> </div>
-            <div class="row">
-                <div class="col-md-7">
-                    <div class="left border">
-                        <div class="row"> <span class="header">Payment</span>
-                            <div class="icons"> <img src="https://img.icons8.com/color/48/000000/visa.png" /> <img src="https://img.icons8.com/color/48/000000/mastercard-logo.png" /> <img src="https://img.icons8.com/color/48/000000/maestro.png" /> </div>
-                        </div>
-                        <form> <span>Cardholder's name:</span> <input placeholder="Linda Williams"> <span>Card Number:</span> <input placeholder="0125 6780 4567 9909">
-                            <div class="row">
-                                <div class="col-4"><span>Expiry date:</span> <input placeholder="YY/MM"> </div>
-                                <div class="col-4"><span>CVV:</span> <input id="cvv"> </div>
-                            </div> <input type="checkbox" id="save_card" class="align-left"> <label for="save_card">Save card details to wallet</label>
-                        </form>
-                    </div>
-                </div>
-                <div class="col-md-5">
-                    <div class="right border">
-                        <div class="header">Order Summary</div>
-                        <p>2 items</p>
-                        <div class="row item">
-                            <div class="col-4 align-self-center"><img class="img-fluid" src="https://i.imgur.com/79M6pU0.png"></div>
-                            <div class="col-8">
-                                <div class="row"><b>$ 26.99</b></div>
-                                <div class="row text-muted">Be Legandary Lipstick-Nude rose</div>
-                                <div class="row">Qty:1</div>
+
+      <div class="row">
+        <div class="col-md-6 mx-auto p-0">
+            <div class="card">
+                <div class="login-box">
+                    <div class="login-snip"> <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Login</label> <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Sign Up</label>
+                        <div class="login-space">
+                            <div class="login">
+                                <div class="group"> <label for="user" class="label">Username</label> <input id="user" type="text" class="input" placeholder="Enter your username"> </div>
+                                <div class="group"> <label for="pass" class="label">Password</label> <input id="pass" type="password" class="input" data-type="password" placeholder="Enter your password"> </div>
+                                <div class="group"> <input id="check" type="checkbox" class="check" checked> <label for="check"><span class="icon"></span> Keep me Signed in</label> </div>
+                                <div class="group"> <input type="submit" class="button" value="Sign In"> </div>
+                                <div class="hr"></div>
+                                <div class="foot"> <a href="#">Forgot Password?</a> </div>
+                            </div>
+                            <div class="sign-up-form">
+                                <div class="group"> <label for="user" class="label">Username</label> <input id="user" type="text" class="input" placeholder="Create your Username"> </div>
+                                <div class="group"> <label for="pass" class="label">Password</label> <input id="pass" type="password" class="input" data-type="password" placeholder="Create your password"> </div>
+                                <div class="group"> <label for="pass" class="label">Repeat Password</label> <input id="pass" type="password" class="input" data-type="password" placeholder="Repeat your password"> </div>
+                                <div class="group"> <label for="pass" class="label">Email Address</label> <input id="pass" type="text" class="input" placeholder="Enter your email address"> </div>
+                                <div class="group"> <input type="submit" class="button" value="Sign Up"> </div>
+                                <div class="hr"></div>
+                                <div class="foot"> <label for="tab-1">Already Member?</label> </div>
                             </div>
                         </div>
-                        <div class="row item">
-                            <div class="col-4 align-self-center"><img class="img-fluid" src="https://i.imgur.com/Ew8NzKr.jpg"></div>
-                            <div class="col-8">
-                                <div class="row"><b>$ 19.99</b></div>
-                                <div class="row text-muted">Be Legandary Lipstick-Sheer Navy Cream</div>
-                                <div class="row">Qty:1</div>
-                            </div>
-                        </div>
-                        <hr>
-                        <div class="row lower">
-                            <div class="col text-left">Subtotal</div>
-                            <div class="col text-right">$ 46.98</div>
-                        </div>
-                        <div class="row lower">
-                            <div class="col text-left">Delivery</div>
-                            <div class="col text-right">Free</div>
-                        </div>
-                        <div class="row lower">
-                            <div class="col text-left"><b>Total to pay</b></div>
-                            <div class="col text-right"><b>$ 46.98</b></div>
-                        </div>
-                        <div class="row lower">
-                            <div class="col text-left"><a href="#"><u>Add promo code</u></a></div>
-                        </div> <button class="btn">Place order</button>
-                        <p class="text-muted text-center">Complimentary Shipping & Returns</p>
                     </div>
                 </div>
             </div>
         </div>
-        
     </div>
 
 
 
 
 
-<form>
-  <fieldset class="fieldset">
-    <legend class="">Choose Delivery method</legend>
-    <ul class="no-bullet">
-      <li><input type="checkbox"><label for="checkbox">Same day messenger service</label></li>
-      <li><input type="checkbox"><label for="checkbox">Next day ground delivery</label></li>
-      <li><input type="checkbox"><label for="checkbox">pick up</label></li>
-    </ul>
-  </fieldset>
-</form>
+
+
+
 
 
 
@@ -158,7 +120,7 @@
       <div class="col-lg-4 mb-2 mx-auto mt-2">
         <h3  text-center>Links</h3>
         <ul>
-          <li><a href="#">New come</a></li>
+          <li><a href="#">New Arrival</a></li>
           <li><a href="#">Brands</a></li>
           <li><a href="#">Eye shope</a></li>
           <li><a href="#">Visit</a></li>
@@ -174,7 +136,7 @@
           <i class="fas fa-phone mr-3"></i>(541)745-3010
         </p>
         <p>
-          <i class="fas fa-phone mr-3"></i>info@hsdf.com
+          <i class="fas fa-envelope mr-3"></i>info@hsdf.com
         </p>
 
       </div>
